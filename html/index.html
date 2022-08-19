@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+
+    <div class="imgBox">
+        <img class="image scro" src="../img/scorpio.svg" alt="">
+        <img class="image aries" src="../img/aries.svg" alt="">
+        <img class="image sagi" src="../img/sagittarius.svg" alt="">
+        <img class="image aquar" src="../img/aquarius.svg" alt="">
+        <img class="image pisces" src="../img/pisces.svg" alt="">
+        <img class="image virgo" src="../img/virgo.svg" alt="">
+    </div>
+	<!-- 有action的話就會執行submit的動作	 -->
+    <form>
+        <div class="wrapper">
+            <h1 class="title">星 之 占 卜</h1>
+            <div class="qbox q0">
+                <label for="">帳<span>號</span></label>
+                <input type="text" name="acc" class="Q0" id="acc" autocomplete="off" 
+                placeholder="請輸入手機號碼">
+                <!-- <div class="line l0"></div> -->
+            </div>
+            <div class="qbox q1">
+                <label for="">密<span>碼</span></label>
+                <input type="password" name="password" class="Q0" id="name" autocomplete="off" 
+                placeholder="請輸入密碼">
+                <!-- <div class="line l0"></div> -->
+            </div>
+            <div class="abox">
+                <a href="regi_page.html">前往註冊</a>
+            </div>
+            <div class="bot">
+                <button type="button" name="go">算命</button>
+			    <h2 class="caution"></h2>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+h1,h2,h3,p{
+    margin: 0;
+    color: #fff;
+}
+
+body,html{
+    width: 100%;
+    background-color: #222;
+    font-family: "微軟正黑體";
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+
+    .exit {
+        position: fixed;
+        width: 80px;
+        left: 40px;
+        top: 30px;
+        opacity: .3;
+        transition: all 0.4s;
+        z-index: 100;
+        cursor: pointer;
+        &:hover{
+            opacity: .8;
+        }
+    }
+    .imgBox{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        top: 0;
+        user-select: none;
+        // background-color: #fff;
+        .image{
+            position: absolute;
+            width: 950px;
+            opacity: .8;
+            z-index: 100;  //100
+            &.scor{
+                right: 30px;
+                top: 100px;
+                // animation: imageIn 4s 4s both;  //4s 1s
+                opacity: 0.9;
+            }
+            &.star{
+                right: 490px;
+                top: 667px;
+                width: 100px;
+                height: 100px;
+                text-shadow: 0.5em 0.5em 0.5em rgba(white,0.1);
+                &.starR1{
+                    right: 450px;
+                    top: 780px;
+                }
+                &.starR2{
+                    right: 310px;
+                    top: 770px;
+                }
+                &.starR3{
+                    right: 170px;
+                    top: 740px;
+                }
+                &.starR4{
+                    right: 80px;
+                    top: 660px;
+                }
+                &.starR5{
+                    right: 50px;
+                    top: 570px;
+                }
+                &.starR6{
+                    right: 110px;
+                    top: 460px;
+                }
+                &.starL1{
+                    right: 590px;
+                    top: 600px;
+                }
+                &.starL2{
+                    right: 710px;
+                    top: 510px;
+                }
+                &.starL3{
+                    right: 580px;
+                    top: 470px;
+                }
+                &.starL4{
+                    right: 760px;
+                    top: 630px;
+                }
+                &.starL5{
+                    right: 850px;
+                    top: 530px;
+                }
+            }
+        }
+        canvas{
+            background:rgba(255,255,255,0);
+            position: absolute;
+            right: 30px;
+            top: 220px;
+            z-index: 50 ;
+            transition: 0.5;
+        }
+        #mycanvas2{
+            position: relative;
+            z-index: 100;
+        }
+        
+        @keyframes imageIn{
+            0%{opacity: 0;transform: translateX(40px);}
+            100%{opacity: 0.8;transform: translateX(-30px)}
+        }
+    }
+    .left{
+        width: 1000px;
+        position: absolute;
+        left: 50px;
+        top: 0px;
+
+        .title{
+            position: absolute;
+            left: 0;
+            top: 0;
+            user-select: none;
+            .zodiac{
+                // color: linear-gradient(#ef567a,#bf2b2b);
+                position: relative;
+                font-size: 150px;
+                letter-spacing: 30px;
+                left: 170px;
+                top: 100px;
+                text-shadow: 0.05em 0.05em 0.2em rgba(white,0.1);
+    
+                background-color: red;
+                background-image: linear-gradient(#ff88a4,#941e1e);
+    
+                background-size: 100%;
+                background-repeat: repeat;
+    
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+            }
+            .gender{
+                position: relative;
+                font-size: 80px;
+                letter-spacing: 40px;
+                font-weight: 500;
+                opacity: .7;
+                left: 620px;
+                top: 90px;
+            }
+        }
+        .content{
+            position: absolute;
+            left: 175px;
+            top: 390px;
+            width: 460px;
+            letter-spacing: 3px;
+            .st1{
+                opacity: 0.6;
+            }
+            h2{
+                margin-bottom: 20px;
+                font-weight: 300;
+                span{
+                    margin-right: 15px;
+                    font-weight: 600;
+                    color: #ff88a4;
+                }  
+            }
+            h3{
+                margin-bottom: 7px;
+                font-size: 30px;
+                color: #ffe388;
+                opacity: 0.6;
+            }
+            p{
+                margin-bottom: 30px;
+                letter-spacing: 3px;
+                font-size: 20px;
+                opacity: 1;
+            }
+        }
+    }
+    
+    
+}
+

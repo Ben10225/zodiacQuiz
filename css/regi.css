@@ -1,0 +1,222 @@
+@charset "UTF-8";
+body, html {
+  background-color: #222;
+  font-family: "微軟正黑體";
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: -20px;
+}
+.wrapper .leftbox, .wrapper .rightbox {
+  margin: 0 70px;
+}
+.wrapper .exit {
+  position: fixed;
+  width: 80px;
+  left: 40px;
+  top: 30px;
+  opacity: 0.3;
+  transition: all 0.4s;
+  z-index: 100;
+  cursor: pointer;
+}
+.wrapper .exit:hover {
+  opacity: 0.8;
+}
+
+.qbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.qbox:nth-child(1):hover input::-moz-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(1):hover input:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(1):hover input::placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(2):hover input::-moz-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(2):hover input:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(2):hover input::placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(3):hover input::-moz-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(3):hover input:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(3):hover input::placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(4):hover input::-moz-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(4):hover input:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(4):hover input::placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(5):hover input::-moz-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(5):hover input:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(5):hover input::placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(6):hover input::-moz-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(6):hover input:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.qbox:nth-child(6):hover input::placeholder {
+  opacity: 0.4;
+}
+.qbox label {
+  text-align: center;
+  font-size: 30px;
+  color: #f4f4f4;
+  margin-bottom: 20px;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.qbox label span {
+  padding-left: 20px;
+}
+.qbox input {
+  text-align: center;
+  padding: 5px;
+  font-size: 25px;
+  color: #f4f4f4;
+  height: 25px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  transition: 0.4s;
+}
+.qbox input:focus {
+  background-color: rgba(153, 153, 153, 0.1);
+}
+.qbox .line {
+  margin-top: 15px;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: scaleX(0.2);
+  transition: all 0.4s;
+}
+.qbox .radioBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.4s;
+}
+.qbox .radioBox .rdcss {
+  opacity: 1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  margin: 0;
+  margin-right: 15px;
+  transition: all 0.4s;
+}
+.qbox .radioBox .rdcss:checked {
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.qbox .radioBox .rdcss:nth-child(3) {
+  margin-left: 30px;
+}
+.qbox .radioBox .radioType {
+  width: auto !important;
+  font-size: 25px;
+  display: inline;
+  width: 100px;
+  cursor: pointer;
+  font-weight: normal;
+  margin: 0px;
+  text-align: left;
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12%;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  opacity: 0.3;
+  transition: all 0.4s;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+.caution {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -22%;
+  color: rgba(216, 54, 54, 0.9);
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 0.5s;
+  opacity: 0;
+}/*# sourceMappingURL=regi.css.map */

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Page</title>
+    <link rel="stylesheet" href="../css//show.css">
+	<script>
+		var stars_json;
+		var lines_json;
+	</script>
+</head>
+<body>
+    <div class="wrapper">
+        <img class="exit" src="../img/exit.svg" alt="">
+        <div class="imgBox">
+            <img class="image scor" src="../img/image.svg" alt="" >
+            <canvas id="mycanvas"></canvas>
+            <!-- <canvas id="mycanvas2"></canvas> -->
+        </div>
+        <div class="left">
+            <div class="title">
+                <h1 class="zodiac">zodiac</h1>
+                <h2 class="gender">gender</h1>
+            </div>
+            <div class="content">
+                <h2><span>name</span>您具備以下特質：</h2>
+                <h3 class="smallTitle st1">title1</h3>
+                <p class="p1" id="p1">content1</p>
+                <h3 class="smallTitle st2">title2</h3>
+                <p class="p2">content2</p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/show_index.js"></script>
+</body>
+</html>

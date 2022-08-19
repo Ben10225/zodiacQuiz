@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+
+    <link rel="stylesheet" href="../css/regi.css">
+</head>
+<body>
+    <form>
+        <div class="wrapper">
+        <img class="exit" src="../img/exit.svg" alt="">
+            <div class="leftbox">
+                <div class="qbox q0">
+                    <label for="">姓<span>名</span></label>
+                    <input type="text" name="name" class="Q0" id="name" autocomplete="off" 
+                    placeholder="請填入2-10字中英文">
+                    <div class="line l0"></div>
+                </div>
+                <div class="qbox q1">
+                    <label for="">性<span>別</span></label>
+                    <!-- <input type="text" name="gender" class="Q1" id="gender" autocomplete="off" 
+                    placeholder="男 or 女"> -->
+                    <div class="radioBox">
+                        <input type="radio" name="gender" value="男" id="male" class="rdcss">
+                        <label for="male" class="radioType">男性</label>
+                        <input type="radio" name="gender" value="女" id="female" class="rdcss r2">
+                        <label for="female" class="radioType">女性</label>
+                    </div>
+                    <div class="line l1"></div>
+                </div>
+                <div class="qbox q2">
+                    <label for="">生<span>日</span></label>
+                    <input type="date" name="bir" class="Q2" id="bir" autocomplete="off" 
+                    placeholder="YYYY/MM/DD">
+                    <div class="line l2"></div>
+                </div>
+            </div>
+            <div class="rightbox">
+                <div class="qbox q3">
+                    <label for="">帳<span>號</span></label>
+                    <input type="text" name="acc" class="Q3" id="acc" autocomplete="off" 
+                    placeholder="請填手機號碼 09..">
+                    <div class="line l3"></div>
+                </div>
+                <div class="qbox q4">
+                    <label for="">密<span>碼</span></label>
+                    <input type="password" name="password" class="Q4" id="password" autocomplete="off" 
+                    placeholder="6-9位數字+英文">
+                    <div class="line l4"></div>
+                </div>
+                <div class="qbox q5">
+                    <label for="">確<span>認</span><span>密</span><span>碼</span></label>
+                    <input type="password" name="chkpassword" class="Q5" id="chkpassword" autocomplete="off" 
+                    placeholder="請確認密碼">
+                    <div class="line l5"></div>
+                </div>
+            </div>
+            <button type="button" onclick="register_new()">註冊</button>  
+			<!-- 如果button不要submit type="button" -->
+            <h2 class="caution"></h2>
+        </div>
+    </form>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/regi_index.js"></script>
+</body>
+</html>

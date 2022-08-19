@@ -1,0 +1,243 @@
+body,html{
+    width: 100%;
+    background-color: #222;
+    font-family: "微軟正黑體";
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -50px;
+}
+.title{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.qbox{
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    &:nth-child(2):hover input::placeholder{
+        opacity: 0.4;
+    }
+    &:nth-last-child(n):hover input::placeholder{
+        opacity: 0.4;
+    }
+
+    label{
+        text-align: center;
+        font-size: 30px;
+        color: #f4f4f4;
+        margin-bottom: 20px;
+        font-weight: 700;
+        user-select: none;
+        // cursor: pointer;
+        span{
+            padding-left: 20px;
+        }
+
+    }
+    input{
+        text-align: center;
+        padding: 5px;
+        font-size: 25px;
+        color: #f4f4f4;
+        background-color: rgba(#999,0.1);
+        border: 0;
+        outline: none;
+        transition: 0.4s;
+        // &:focus{
+        //     background-color: rgba(#999,0.1);
+        // }
+        
+    }
+    .line{
+        margin-top: 15px;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        transform: scaleX(0.2);
+        transition: all 0.4s;
+        
+    }
+}
+
+::placeholder{
+    color: rgba(white,0.5);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.imgBox{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .image{
+        position: absolute;
+        width: 200px;
+        opacity: 0;
+        
+        &.scro{
+            right: var(--scr_right);
+            top: var(--scr_top);
+            animation: Scro 20s both infinite;
+        }
+        &.aries{
+            left: var(--aries_left);
+            bottom: var(--aries_bottom);
+            animation: Aries 20s 3s both infinite;
+        }
+        &.sagi{
+            left: var(--sag_left);
+            top: var(--sag_top);
+            animation: Sagi 20s 7s both infinite;
+        }
+        &.aquar{
+            right: var(--aquar_right);
+            bottom: var(--aquar_bottom);
+            animation: Aquar 20s 9s both infinite;
+            transform: rotate(111deg);
+        }
+        &.pisces{
+            left: var(--pisces_left);
+            top: var(--pisces_top);
+            animation: Pisces 20s 13s both infinite;
+            transform: rotate(87deg);
+        }
+        &.virgo{
+            right: var(--virgo_right);
+            bottom: var(--virgo_bottom);
+            animation: Virgo 20s 15s both infinite;
+            transform: rotate(162deg);
+        }
+    }
+    
+}
+
+@keyframes Scro{
+    0%{opacity: 0;transform: scale(1.1) rotate( var(--scr_ro) );}
+    22%{opacity: 0.09;}
+    40%{opacity: 0;transform: scale(1.6) rotate( var(--scr_ro) );}
+    41%{opacity: 0;transform: scale(1.1);}
+}
+
+@keyframes Aries{
+    0%{opacity: 0;transform: scale(1.5) rotate( var(--aries_ro) );}
+    33%{opacity: 0.1;}
+    50%{opacity: 0;transform: scale(2) rotate( var(--aries_ro) );}
+    51%{opacity: 0;transform: scale(0.9);}
+}
+
+@keyframes Sagi{
+    0%{opacity: 0;transform: scale(1.2) rotate( var(--sag_ro) );}
+    25%{opacity: 0.3;}
+    37%{opacity: 0;transform: scale(1.7) rotate( var(--sag_ro) );}
+    38%{opacity: 0;transform: scale(1.2);}
+}
+
+@keyframes Aquar{
+    0%{opacity: 0;transform: scale(1.3);}
+    28%{opacity: 0.15;}
+    45%{opacity: 0;transform: scale(1.9) rotate(8deg);}
+    46%{opacity: 0;transform: scale(1.3);}
+}
+
+@keyframes Pisces{
+    0%{opacity: 0;transform: scale(1.6);}
+    25%{opacity: 0.12;}
+    37%{opacity: 0;transform: scale(2.1) rotate(6deg);}
+    38%{opacity: 0;transform: scale(1.6);}
+}
+
+@keyframes Virgo{
+    0%{opacity: 0;transform: scale(1.4) rotate( var(--virgo_ro) );}
+    28%{opacity: 0.25;}
+    45%{opacity: 0;transform: scale(2) rotate( var(--virgo_ro) );}
+    46%{opacity: 0;transform: scale(1.4);}
+}
+
+.abox{
+    width: 70px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    a{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -20px;
+        color: white;
+        opacity: 0.4;
+        text-decoration: none;
+        margin: 0;
+        transition: 0.4s;
+        // background-color: red;
+        &:hover{
+            opacity: 0.8;
+        }
+    
+    }
+}
+
+
+button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    margin-top: 30px;
+    bottom: -12%;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    opacity: .3;
+    transition: all 0.4s;
+    
+    &:hover{
+        opacity: .9;
+    }
+    
+}
+.bot{
+    position: relative;
+    .caution{
+        position: absolute;
+        width: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgba(#d83636,0.9);
+        font-size: 20px;
+        font-weight: 400;
+        transition: all 0.5s;
+        opacity: 0;
+        margin: 25px 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
