@@ -8,4 +8,4 @@
 
 網站架設在以下網址\
 歡迎測驗網頁~\
-http://benpp.ddns.net:3001/html/
+http://benpp.ddns.net:3001/
